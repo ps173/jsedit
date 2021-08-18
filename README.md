@@ -1,13 +1,12 @@
 # Background
 
-This is my experiment to make a code editor in javascript  
-which should turn out to better than nano. _dies laughing_
+This is my experiment to make a code editor in javascript which should turn out  
+to better than nano. _dies laughing_
 
-Now this is purposely for some minute text editing and  
-code viewing purpose.
+Now this is purposely for some minute text editing and code viewing purpose.
 
-So essentially for my requirements I would want something  
-like an insert and normal mode and a good colorscheme I guess.
+So essentially for my requirements I would want something like an insert and   
+normal mode and a good colorscheme I guess.
 
 # Todo
 
@@ -51,7 +50,7 @@ like an insert and normal mode and a good colorscheme I guess.
   ```
 
   After throw some more readline stuff for detecting ctrl-c to exit and u r
-  now going with a editing screen
+  now going with a editing screen. But this only for reading lines 
 
 - [ ] Next is reading file and taking file input
 - [ ] Multiprocesses to show more stuff
