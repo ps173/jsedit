@@ -1,13 +1,13 @@
-# About
+# Background
 
-This is my experiment to make a code editor in javascript
+This is my experiment to make a code editor in javascript  
 which should turn out to better than nano. _dies laughing_
 
-Now this is purposely for some minute text editing and
+Now this is purposely for some minute text editing and  
 code viewing purpose.
 
-So essentially for my requirements I would want something
-like an insert and normal mode and a good colorscheme i guess.
+So essentially for my requirements I would want something  
+like an insert and normal mode and a good colorscheme I guess.
 
 # Todo
 
@@ -15,8 +15,8 @@ like an insert and normal mode and a good colorscheme i guess.
 
 - [ ] Some way to manage screen \ windows in terminal
 
-  - ncurses binding for node has no maintainer right now
-  - there is blessed but it is far more bloated with stuff
+  - Ncurses binding for node has no maintainer right now.
+  - There is blessed but it is far more bloated with stuff
     for my use case which will end up making download size
     more atleast imo. Plus why depend on some external deps.
 
@@ -32,8 +32,8 @@ like an insert and normal mode and a good colorscheme i guess.
 
 - [x] Input
 
-  - Taking input is not that hard. Node comes with a module called readline
-    so you can do
+  Taking input is not that hard. Node comes with a module called readline  
+  so you can do
 
   ```js
   const readline = require("readline");
@@ -54,3 +54,4 @@ like an insert and normal mode and a good colorscheme i guess.
   now going with a editing screen
 
 - [ ] Next is reading file and taking file input
+- [ ] Multiprocesses to show more stuff
