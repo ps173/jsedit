@@ -1,0 +1,17 @@
+{
+  "name": "jsedit",
+  "version": "0.0.1",
+  "description": "A simple cli editor in js",
+  "main": "src/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli-editor"
+  ],
+  "author": "ps173",
+  "license": "MIT"
+}
