@@ -19,9 +19,9 @@ So essentially for my requirements I would want something like an insert and nor
   - So i have decided to make my own terminal interface.
     _again dies laughing_
 
-    Any how any terminal interface like ncurses renders a
+    Anyhow any terminal interface like ncurses renders a
     proper window / screen. So first step will be rendering
-    the screen :)
+    the screen :). (Reasearch in progress rn my brain kinda stopped working)
 
     This will be used to show stuff as column number and
     line number and file name
@@ -42,18 +42,23 @@ So essentially for my requirements I would want something like an insert and nor
   rl.on("line", () => {
     return;
   });
-
   // This does create a basic editing screen
+  // although this is just reading input line and rather than reading
+  // the input line wise I want to read it character by character.
+  // So i switch to this
+
+  const stdin = process.stdin;
+
+  stdin.on("data", (key) => {
+    stdin.setRawMode(true);
+
+    if (key === "\u0003") {
+      process.exit();
+    }
+
+    process.stdout.write(key);
+  });
+
+  // This way you can get input character by character and exploit them further
+  // with octal codes for colors and stuff.
   ```
-
-  After throw some more readline stuff for detecting ctrl-c to exit and u r
-  now going with a editing screen. But this only for reading lines 
-  **Note: for some reason I thought that playing with stdin to make things is a 
-  good idea. No it is not you will have to interpret lot of stuff like handling 
-  position of cursor and more. Plus it bugs a lot**
-
-- [ ] Next is reading file and taking file input
-- [ ] Multiprocesses to show more stuff like a bar at top
-  Now since I know that terminal is not like ur common browser so u can not fix
-  the things with their position so next thing that I would like to work on is 
-  fixing a bar at the top of screen
